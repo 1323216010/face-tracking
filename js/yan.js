@@ -28,6 +28,7 @@ bnt1.onclick = async () => {
       renderer.render(scene, camera);
     });
   }
+  start()
 }
 
 const bnt2 = document.getElementById("btn2");
@@ -45,4 +46,5 @@ bnt2.onclick = async () => {
       renderer.render(scene, camera);
     });
   }
+  start()
 }
