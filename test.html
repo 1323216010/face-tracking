@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script type="importmap">
+        {
+          "imports": {
+        "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.147.0/examples/jsm/"
+          }
+        }
+    </script>
+    <p>单击按钮触发函数。</p>
+    <button onclick="f()">点我</button>
+    <p id="app"></p>
+</html>
+
+<script>
+    function f() {
+        document.getElementById("app").innerHTML = "Hello World";
+    }
+</script>
