@@ -67,6 +67,6 @@ bnt3.onclick = async () => {
   start()
 }
 
-function f() {
+export default function f() {
   console.log('233...')
 }
