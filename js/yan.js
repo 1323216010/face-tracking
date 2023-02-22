@@ -48,3 +48,21 @@ bnt2.onclick = async () => {
   }
   start()
 }
+
+const bnt3 = document.getElementById("btn3");
+
+bnt3.onclick = async () => {
+  const texture = new THREE.TextureLoader().load('/p3');
+  faceMesh.material.map = texture;
+  faceMesh.material.transparent = true;
+  faceMesh.material.needsUpdate = true;
+  scene.add(faceMesh);
+
+  const start = async () => {
+    await mindarThree.start();
+    renderer.setAnimationLoop(() => {
+      renderer.render(scene, camera);
+    });
+  }
+  start()
+}
