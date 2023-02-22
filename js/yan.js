@@ -16,7 +16,7 @@ const faceMesh = mindarThree.addFaceMesh();
 const bnt1 = document.getElementById("btn1");
 
 bnt1.onclick = async () => {
-  const texture = new THREE.TextureLoader().load('/p1');
+  const texture = new THREE.TextureLoader().load('/assets/p1.png');
   faceMesh.material.map = texture;
   faceMesh.material.transparent = true;
   faceMesh.material.needsUpdate = true;
@@ -34,7 +34,7 @@ bnt1.onclick = async () => {
 const bnt2 = document.getElementById("btn2");
 
 bnt2.onclick = async () => {
-  const texture = new THREE.TextureLoader().load('/p2');
+  const texture = new THREE.TextureLoader().load('/assets/p2.png');
   faceMesh.material.map = texture;
   faceMesh.material.transparent = true;
   faceMesh.material.needsUpdate = true;
@@ -52,7 +52,7 @@ bnt2.onclick = async () => {
 const bnt3 = document.getElementById("btn3");
 
 bnt3.onclick = async () => {
-  const texture = new THREE.TextureLoader().load('/p3');
+  const texture = new THREE.TextureLoader().load('/assets/p3.png');
   faceMesh.material.map = texture;
   faceMesh.material.transparent = true;
   faceMesh.material.needsUpdate = true;
@@ -70,7 +70,7 @@ bnt3.onclick = async () => {
 const bnt4 = document.getElementById("btn4");
 
 bnt4.onclick = async () => {
-  const texture = new THREE.TextureLoader().load('/p4');
+  const texture = new THREE.TextureLoader().load('/assets/p4.png');
   faceMesh.material.map = texture;
   faceMesh.material.transparent = true;
   faceMesh.material.needsUpdate = true;
