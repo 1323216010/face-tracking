@@ -28,11 +28,6 @@ bnt1.onclick = async () => {
       renderer.render(scene, camera);
     });
   }
-
-  await mindarThree.start();
-  renderer.setAnimationLoop(() => {
-    renderer.render(scene, camera);
-  });
 }
 
 const bnt2 = document.getElementById("btn2");
@@ -50,9 +45,4 @@ bnt2.onclick = async () => {
       renderer.render(scene, camera);
     });
   }
-
-  await mindarThree.start();
-  renderer.setAnimationLoop(() => {
-    renderer.render(scene, camera);
-  });
 }
